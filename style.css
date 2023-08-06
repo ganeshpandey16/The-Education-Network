@@ -201,69 +201,90 @@ footer h1 {
 /* Default styles that apply to all screen sizes */
 
 /* Styles for screens smaller than 768px (e.g., smartphones) */
+/* Default styles that apply to all screen sizes */
+
+/* Styles for screens smaller than 768px (e.g., smartphones) */
 @media (max-width: 767px) {
   header {
-    height: 80px;
+    height: auto;
   }
-
+  
   .logo {
-    margin: 10px;
-  }
-
-  .nav-links {
-    margin: 10px;
+    margin: 15px;
     float: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
-
+  
+  .nav-links {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+  
   .nav-links li {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .middle-section {
+    margin: 10px;
+  }
+  
+  .box {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+  }
+  
+  .box h2 {
+    font-size: 24px;
+  }
+  
+  .box button {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    padding: 20px 15px;
+  }
+  
+  .footernav ul {
+    flex-direction: column;
+  }
+  
+  .footernav ul li {
+    text-align: center;
     margin: 10px 0;
   }
-
-  .middle-section {
-    justify-content: center;
-  }
-
-  .box {
-    width: calc(50% - 20px);
-    padding-bottom: calc(50% - 20px);
-  }
-
-  footer {
-    padding: 50px 30px 10px;
+  
+  .copy {
+    padding: 10px;
   }
 }
 
 /* Styles for screens between 768px and 1023px (e.g., tablets) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .logo {
-    margin: 20px;
-  }
-
   .nav-links {
-    margin: 20px;
+    margin: 15px;
   }
-
+  
   .middle-section {
-    justify-content: center;
+    margin: 15px auto;
   }
-
+  
   .box {
     width: calc(50% - 20px);
     padding-bottom: calc(50% - 20px);
   }
+  
+  .box h2 {
+    font-size: 28px;
+  }
 }
 
-/* Styles for screens larger than 1023px (e.g., laptops and desktops) */
+/* Styles for screens larger than 1023px (e.g., desktops) */
 @media (min-width: 1024px) {
   .middle-section {
-    justify-content: space-between;
-  }
-
-  .box {
-    width: calc(33.33% - 20px);
-    padding-bottom: calc(33.33% - 20px);
+    margin: 20px auto;
   }
 }
